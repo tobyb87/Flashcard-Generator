@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Trivia</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/darkly/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="container">
+
+  <!--start screen stuff-->
+  <div class="jumbotron startDiv" style="display: normal">
+  <h2 class="startHeader change">Random Trivia, What do you know?</h2><br>
+  	
+  <h3 class="change2">Press Let's do this to start</h3>
+   
+    <br><br><br>
+
+    <button class="btn button start">Let's do this!</button>
+  </div>
+
+
+  <!--section for holding the question content-->
+  <div class="jumbotron questionsDiv" style="display: none"> 
+  <form>
+      <fieldset>
+        <legend>1) What city is the 2nd largest bike shop in?</legend>
+        <input type="radio" name="one" value='austin' id='1a'>  Austin<br>
+        <input type="radio" name="one" value='los Angeles' id="1b">  Los Angeles<br>
+        <input type="radio" name="one" value='denver' id="1c">  Denver<br>
+        <input type="radio" name="one" value='portland' id="1d">  Portland<br>   
+      </fieldset>
+       <br><br>
+      <fieldset>
+        <legend>2) What is a Well Log, when it comes to oil wells?</legend>
+        <input type="radio" name="two" value='memos' id='2a'>  Memos from the operating the well<br>
+        <input type="radio" name="two" value='document' id="2b">  A document that tells you about the well's general build process.<br>
+        <input type="radio" name="two" value='events' id="2c">  A log of all of the well's events<br>
+        <input type="radio" name="two" value='document' id="2d">  A document that tells you what rocks are under the ground.<br>   
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend>3) Who was Willie Nelson's main stage manager?</legend>
+        <input type="radio" name="three" value='noah' id='3a'>  Noah aka Cowboy<br>
+        <input type="radio" name="three" value='poodie' id="3b">  Poodie<br>
+        <input type="radio" name="three" value='ben' id="3c">  Ben the man<br>
+        <input type="radio" name="three" value='smokey' id="3d">  Smokey<br>   
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend>4) Who revolutionived the multitrack recording process that became the idea behind the 24 track tape machine?</legend>
+        <input type="radio" name="four" value='beetles' id='4a'>  The Beetles<br>
+        <input type="radio" name="four" value='doors' id="4b">  The Doors<br>
+        <input type="radio" name="four" value='stones' id="4c">  The Rolling Stones<br>
+        <input type="radio" name="four" value='jimmy' id="4d">  Jimmy Iovin<br>   
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend>5) What studio helped revolutionived the multitrack recording process that became the idea behind the 24 track tape machine?</legend>
+        <input type="radio" name="five" value='sun' id='5a'>  Sun Studios<br>
+        <input type="radio" name="five" value='air' id="5b">  AIR<br>
+        <input type="radio" name="five" value='abbey' id="5c">  Abbey Road<br>
+        <input type="radio" name="five" value='plant' id="5d">  The Record Plant<br>   
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend>6) What is the largest freshwater lake in the world?</legend>
+        <input type="radio" name="six" value='tahoe' id='6a'>  Lake Tahoe<br>
+        <input type="radio" name="six" value='superior' id="6b">  Lake Superior<br>
+        <input type="radio" name="six" value='winnipeg' id="6c">  Lake Winnipeg<br>
+        <input type="radio" name="six" value='michigan' id="6d">  Lake Michigan<br>   
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend>7) What is the seventh planet from the sun?</legend>
+        <input type="radio" name="seven" value='pluto' id='7a'>  Pluto<br>
+        <input type="radio" name="seven" value='mars' id="7b">  Mars<br>
+        <input type="radio" name="seven" value='jupiter' id="7c">  Jupiter<br>
+        <input type="radio" name="seven" value='uranus' id="7d">  Uranus<br>   
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend>8) What is another word for lexicon?</legend>
+        <input type="radio" name="eight" value='dictionary' id='8a'>  Dictionary<br>
+        <input type="radio" name="eight" value='giraffe' id="8b">  Giraffe<br>
+        <input type="radio" name="eight" value='persperation' id="8c">  Persperation<br>
+        <input type="radio" name="eight" value='vernacular' id="8d">  Vernacular<br>   
+      </fieldset>
+      
+      <br><br>
+  </form>
+
+  <br><br>
+    <button class="btn button btn-success done">DONE</button>
+    <div class="timerDiv">
+      <span class="timerTop">TIMER</span><br>
+      <span>.........</span><span class="timerBottom">120</span> s
+    </div>
+  </div>
+
+    
+    <!--display results below-->
+  <div class="jumbotron resultsDiv" style="display: none">
+    <h1 class="text-center">RESULTS</h1>
+    <div>
+      <h3>Right Answers: <span id="rightQuestions"></span></h3>
+      <h3>Wrong Answers: <span id="wrongQuestions"></span></h3>
+      <br><br>
+      <h4>Unaswered Questions: <span id="unasweredQuestions"></span></h4>
+    </div>
+  </div>
+
+
+  </div>
+
+  <script src='assets/javascript/app.js'></script>
+
+</body>
+</html>

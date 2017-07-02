@@ -1,0 +1,85 @@
+body{
+background-image: url(../images/moshpit.jpg);
+position: relative;
+}
+
+.change {
+    font-family: 'Coming Soon', cursive, 'Helvetiva';
+	font-size: 45px;
+}
+
+.change2 {
+	font-weight: bold;
+}
+
+.container {
+	width: 950px;
+}
+
+.startHeader {
+	text-decoration: underline;
+}
+
+.jumbotron {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+}
+
+.startDiv {
+	background-image: url(../images/austin.jpg);
+	width: 800px;
+  height: 600px;
+	opacity: 0.95;
+}
+
+.sL {
+	color: lightblue;
+	font-size: 40px;
+}
+
+.questionsDiv {
+	opacity: 0.9;
+	height: 100%;
+}
+
+.resultsDiv {
+	position: relative;
+	top: 100px;
+	opacity: 0.9;
+	height: 100%;
+}
+
+.timerDiv {
+	background-image: url(../images/oil.jpg);
+	opacity: 1;
+    max-width: 180px;
+  	width:100%;
+	padding: 20px;
+	outline: 3px solid #E3E3E3;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	color: white;
+	font-size: 26px;
+	margin-left: 5px;
+}
+.timerTop {
+	text-decoration: underline;
+}
+.done, .start {
+	width:100%;
+	font-size: 30px;
+    font-family: 'Coming Soon', 'Helvetica'
+    
+}
+
+.start {
+	color: lightblue;
+    font-family: 'Coming Soon', 'Helvetica'
+}
